@@ -1,0 +1,30 @@
+{
+	"name": "spring-boot-complete-guide",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"forwardPorts": [
+		8080
+	],
+	"portsAttributes": {
+		"8080": {
+			"label": "spring-boot",
+			"onAutoForward": "silent"
+		}
+	},
+	"postCreateCommand": [
+		"./gradlew",
+		"--version"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-gradle",
+				"eamodio.gitlens",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"vmware.vscode-boot-dev-pack"
+			]
+		}
+	}
+}
