@@ -9,8 +9,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 
-                git credentialsId: 'react-pswd-global',
-                url: 'https://github.com/kkarthiknayak/miniature-goggles.git',
+                git credentialsId: 'demo-pipeline-project',
+                url: 'https://github.com/kkarthiknayak/backendConnectivity.git',
                 branch: 'main'
             }
         }
